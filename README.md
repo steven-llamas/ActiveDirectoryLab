@@ -21,5 +21,5 @@ In this laboratory session, I will demonstrate the process of setting up an Acti
 
 <p align="center">
 Launch the utility: <br/>
-<img src="https://imgur.com/a/kxVGlO1" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/ShyiWPJ" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
