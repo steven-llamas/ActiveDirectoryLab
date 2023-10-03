@@ -38,3 +38,9 @@ Installing DHCP tool to AD: <br/>
 Powershell add users script: <br/>
 <img src="https://i.imgur.com/C9rAmd9.png" height="80%" width="80%" alt="Powershell add users picture"/>
 <br />
+
+<p align="center">
+List of users in AD: <br/>
+<img src="https://i.imgur.com/JqbPbwj.png" height="80%" width="80%" alt="List of users in AD"/>
+<br />
+
