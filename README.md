@@ -17,9 +17,24 @@ In this laboratory session, I will demonstrate the process of setting up an Acti
 - <b>Windows 10</b> (22H2)
 - <b>Windows Server 2019</b> 
 
-<h2>Program walk-through:</h2>
+<h2>Screenshots throughout project:</h2>
 
 <p align="center">
-Launch the utility: <br/>
-<img src="https://imgur.com/ShyiWPJ" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Project diagram provided: <br/>
+<img src="https://i.imgur.com/qdPr8yc.png" height="80%" width="80%" alt="Diagram of Project."/>
+<br />
+
+<p align="center">
+Logging in to Active Directory as an administrator: <br/>
+<img src="https://i.imgur.com/ShyiWPJ.png" height="80%" width="80%" alt="Logging in to Active Directory as an Administrator."/>
+<br />
+
+<p align="center">
+Installing DHCP tool to AD: <br/>
+<img src="https://i.imgur.com/dOItTTP.png" height="80%" width="80%" alt="Installing DHCP to AD."/>
+<br />
+
+<p align="center">
+Powershell add users script: <br/>
+<img src="https://i.imgur.com/C9rAmd9.png" height="80%" width="80%" alt="Powershell add users picture"/>
 <br />
