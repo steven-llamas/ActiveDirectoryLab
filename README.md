@@ -3,7 +3,7 @@
  ### [YouTube Demonstration](https://www.youtube.com/watch?v=B0DALTcGSHc)
 
 <h2>Description</h2>
-In this laboratory session, I will demonstrate the process of setting up an Active Directory home lab environment using Oracle Virtual Box. Engaging in the configuration and operation of this lab will greatly enhance your comprehension of Active Directory and Windows networking principles. If you have any inquiries, don't hesitate to reach out to me.
+I will demonstrate the process of setting up Active Directory in a home lab environment using Oracle Virtual Box. Engaging in the configuration and operation of this lab will greatly enhance your comprehension of Active Directory and Windows networking principles. If you have any inquiries, don't hesitate to reach out to me.
 <br />
 
 
