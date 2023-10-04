@@ -23,6 +23,6 @@ foreach ($n in $USER_FIRST_LAST_LIST) {
                -Enabled $true
 }
 
-# the code above states for each name in file ($n) it created $first (first name) and $last (last name) by splitting the space into two and puts their name in respective varables.
+# the code above states for each name in file ($n) it created $first (first name) and $last (last name) by splitting the space into two and puts their name in respective variables.
 # then the username variable is created by taking the first letter (0) and using + the rest of the last name.
 # new-adUser --- creates a new user with the variables for each user.
