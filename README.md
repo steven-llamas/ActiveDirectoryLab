@@ -1,9 +1,9 @@
-<h1>Active Directory Home Lab</h1>
+<h1>Active Directory (AD) Home Lab Setup Tutorial w 1000 Users</h1>
 
  ### [YouTube Demonstration](https://www.youtube.com/watch?v=B0DALTcGSHc)
 
 <h2>Description</h2>
-I will demonstrate the process of setting up Active Directory in a home lab environment using Oracle Virtual Box. Engaging in the configuration and operation of this lab will greatly enhance your comprehension of Active Directory and Windows networking principles. If you have any inquiries, don't hesitate to reach out to me.
+This tutorial demonstrates the process of setting up Active Directory in a home lab environment using Oracle Virtual Box Based on the tutorial by <a href="https://www.youtube.com/@JoshMadakor/featured">Josh Madakor</a>. Engaging in the configuration and operation of this lab will greatly enhance your comprehension of Active Directory and Windows networking principles. If you have any inquiries, don't hesitate to reach out to me.
 <br />
 
 
