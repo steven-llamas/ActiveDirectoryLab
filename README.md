@@ -24,7 +24,7 @@ Diagram of Project <br/>
  
 <img src="https://github.com/steven-llamas/ActiveDirectoryLab/blob/main/active_directory_diagram.jpg" height="80%" width="80%" alt="Diagram of Project."/>
 
- <p> This is the diagram that is going to be used to set up the two main virtual machines (VMs) for the home lab environment. The first VM will be the Domain Controller (DC), which is the sever that runs Active Directory (AD) and all its components, so we need to set it up with all the following services. The Fully Qualified Domain Name (FQDN) is the complete domain name for AD, which we will need to set up within the DC in order to have Client1 connect to the AD server. Network Address Translation (NAT) will need to be setup as well in order to have the internal Network Interface Card (NIC) comunicate with the internet NIC, so that internet access is avilable within the domain when users sign in to the domain. Lastly, Dynamic Host Configuration Protocl (DHCP) is set up so that when Clients sign on to the domain, they automaticly get leased an IP address and are immediatly connected to the Internet. </p>
+ <p> This is the diagram that is going to be used to set up the two main virtual machines (VMs) for the home lab environment. The first VM will be the Domain Controller (DC), which is the sever that runs Active Directory (AD) and all its components, so we need to set it up with all the following services. The Fully Qualified Domain Name (FQDN) is the complete domain name for AD, which we will need to set up within the DC in order to have clients connect to the AD server. Network Address Translation (NAT) will need to be setup as well in order to have the internal Network Interface Card (NIC) comunicate with the internet NIC, so that internet access is avilable within the domain when users sign in to the domain. Lastly, Dynamic Host Configuration Protocol (DHCP) is set up so that when Clients sign on to the domain, they automatically get leased an IP address and are immediatly connected to the Internet. </p>
 <br />
 
 <h2>Files to Download and Install</h2>
@@ -33,7 +33,7 @@ Diagram of Project <br/>
 - <a href="https://www.microsoft.com/en-us/software-download/windows10">Windows 10 .iso</a>
 - <a href="https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2019">Windows Server 2019</a>
 
-<h2>Tutorial Portion:</h2>
+<h2>Tutorial Portion</h2>
 
 <p align="center">
 Create a new VM machine by clicking on "New" in VirtualBox, to avoid confusion name VM "Domain Controller" and make sure to set "Windows 2019" as version. We Will load boot media after setting up VM.
