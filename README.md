@@ -84,5 +84,66 @@ Create a new VM machine by clicking on "New" in VirtualBox, to avoid confusion n
 <img src="https://i.imgur.com/vwfOydS.png" height="80%" width="80%" alt="Adding the client to the Domain"/>
 
  
-<p align="center"> Login to the client machine within the domain using a domain account. As you can see the client VM shows that we are now in the domain. <br />
+<p align="center"> Login to the client machine within the domain using a domain account. As you can see the client VM shows that we are now in the domain. <br/>
 <img src="https://i.imgur.com/ShyiWPJ.png" height="80%" width="80%" alt="Logging in to Active Directory as an Administrator."/>
+
+<h2>Additional Tips for AD (Not Required)</h2>
+
+<p align="center"> To Create a new Organizational Unit (OU), go to Active Directory Users and Computers and then right click the domain (in this case THM) and select new, then Organizational Unit. <br />
+<img src="https://i.imgur.com/pgk0PH3.png" height="80%" width="80%" alt="Creating an Organizational Unit."/>
+
+<p align="center"> To Delete an OU, you must activate Advanced Features under view in order to be able to select the OU properties and uncheck Protect from accidental Deletion. <br />
+<img src="https://i.imgur.com/ZNmCqKv.png" height="80%" width="80%" alt="Unable to delete OU."/>
+<img src="https://i.imgur.com/vEMO7M0.png" height="80%" width="80%" alt="Selecting Advanced Features."/>
+<img src="https://i.imgur.com/vEMO7M0.png" height="80%" width="80%" alt="Showing the difference when selecting Advanced Features."/>
+<img src="https://i.imgur.com/o84JWyk.png" height="80%" width="80%" alt="Selecting Properties to be able to uncheck Prevent accidental Deletion."/>
+<img src="https://i.imgur.com/tMUFjbI.png" height="80%" width="80%" alt="While in Properties, uncheck Prevent accidential Deletion."/>
+<img src="https://i.imgur.com/j8TIe6T.png" height="80%" width="80%" alt="Deleting a OU right clicking on OU selecting Delete."/>
+<img src="https://i.imgur.com/0MUuRxM.png" height="80%" width="80%" alt="Caution popup appears, to delete clck yes."/>
+
+<p align="center"> Checking Login of a User, you must enable Advanced Features (if not enabled already), right click on the user, go to properties, within properties select the Attribute Editor tab and look for lastLogon. <br />
+<img src="https://i.imgur.com/vEMO7M0.png" height="80%" width="80%" alt="Selecting Advanced Features."/>
+<img src="https://i.imgur.com/iauD9Gu.png" height="80%" width="80%" alt="Showing the Last Logon of Bob for example."/>
+
+<p align="center"> To Delegate control of a OU, or give privileges to certain users (giving IT privileges to reset passwords for the sales dept. for example) you must right click the OU and right click Delegate Control. There another popup appears where you click next and are able to give access to users or groups and specify what privileges they get to recieve.<br />
+<img src="https://i.imgur.com/1G6CTld.png" height="80%" width="80%" alt="Right clicking on OU and selecting Delegate Control."/>
+<img src="https://i.imgur.com/P1iN7C7.png" height="80%" width="80%" alt="popup that appears after seleting Delegate Control."/>
+<img src="https://i.imgur.com/QHveZhM.png" height="80%" width="80%" alt="The next page that appears after clicking Next."/>
+<img src="https://i.imgur.com/k6QF2m2.png" height="80%" width="80%" alt="Clicking Add on the Add Users/Groups, typing a User and clicking Verify to make sure the right User is selected."/>
+<img src="https://i.imgur.com/G0G85la.png" height="80%" width="80%" alt="Showing the Change, when clicking verify."/>
+<img src="https://i.imgur.com/V0zyaMR.png" height="80%" width="80%" alt="After clicking Next, the next page shows the users added, so double check to see if everything is correct."/>
+<img src="https://i.imgur.com/zfYRv0c.png" height="80%" width="80%" alt="Next, you are able to pick and choose what options to give to the selected user(s) or group(s), here we selected to allow the user to reset passwords for the OU."/>
+<img src="https://i.imgur.com/NvsFeaL.png" height="80%" width="80%" alt="After clicking next, shows everthing you have chosen to do and once again, it is a good idea to check everthing over once again."/>
+<img src="https://i.imgur.com/HNuDmac.png" height="80%" width="80%" alt="Using Remote Desktop (RDP) in order to check to see if our changes worked"/>
+<img src="https://i.imgur.com/j73KYqM.png" height="80%" width="80%" alt="Logging in to the IT users AD account to test the changes."/>
+<img src="https://i.imgur.com/PlrFKVl.png" height="80%" width="80%" alt="using CMD to reset another user password through IT user AD account to make sure it works."/>
+<img src="https://i.imgur.com/VqowlMC.png" height="80%" width="80%" alt="Logging in as User that we reset the password for."/>
+<img src="https://i.imgur.com/CtYsBiI.png" height="80%" width="80%" alt="Showing that this User needs to reset their password before logging in"/>
+<img src="https://i.imgur.com/t4Ly0yN.png" height="80%" width="80%" alt="Showing the Password change process a typical user would do."/>
+<img src="https://i.imgur.com/EQ7MMyQ.png" height="80%" width="80%" alt="Showing that we were able to log in to the account after changing password."/>
+
+<p align="center"> Managing Computers In AD, In this example, we created another OU to differentiate between workstations and servers, which can be helpful when managing the domain, as it would be easier to create different policies for each OU.<br />
+<img src="https://i.imgur.com/pgk0PH3.png" height="80%" width="80%" alt="Creating an Organizational Unit."/>
+<img src="https://i.imgur.com/ysLwLXq.png" height="80%" width="80%" alt="Nameing the new OU."/>
+<img src="https://i.imgur.com/u39Ra2L.png" height="80%" width="80%" alt="Showing the New OU in the domain."/>
+<img src="https://i.imgur.com/sfONJpy.png" height="80%" width="80%" alt="Moving the computers to the new OU."/>
+<img src="https://i.imgur.com/ciWVkZc.png" height="80%" width="80%" alt="Shwoing the folder the objects will move to."/>
+<img src="https://i.imgur.com/ej8Dc0J.png" height="80%" width="80%" alt="Showing where the objects have ended up."/>
+
+
+<p align="center">Examples of Group policy editor, and examples of whats in a policy.<br />
+<img src="https://i.imgur.com/w6nsOMQ.png" height="80%" width="80%" alt="Searching for the Group Policy Editor."/>
+<img src="https://i.imgur.com/K77VAHC.png" height="80%" width="80%" alt="Showing the Group Policy Editor."/>
+<img src="https://i.imgur.com/if2tmWk.png" height="80%" width="80%" alt="Example of a Default Domain Policy."/>
+<img src="https://i.imgur.com/EJxRSso.png" height="80%" width="80%" alt="Showing the Computer configuration tab to show the policies."/>
+<img src="https://i.imgur.com/FOhPMkY.png" height="80%" width="80%" alt="Showing what is under those policies."/>
+
+<p align="center">Editing a poilicy example. In this example, we will be changing the minimum password length for all, and prohibiting access to control panel for all OUs except for IT.<br />
+<img src="" height="80%" width="80%" alt=""/>
+<img src="" height="80%" width="80%" alt=""/>
+<img src="" height="80%" width="80%" alt=""/>
+<img src="" height="80%" width="80%" alt=""/>
+<img src="" height="80%" width="80%" alt=""/>
+<img src="" height="80%" width="80%" alt=""/>
+
+<img src="" height="80%" width="80%" alt=""/>
