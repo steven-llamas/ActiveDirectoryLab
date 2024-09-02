@@ -87,7 +87,7 @@ Create a new VM machine by clicking on "New" in VirtualBox, to avoid confusion n
 <p align="center"> Login to the client machine within the domain using a domain account. As you can see the client VM shows that we are now in the domain. <br/>
 <img src="https://i.imgur.com/ShyiWPJ.png" height="80%" width="80%" alt="Logging in to Active Directory as an Administrator."/>
 
-<h2>Additional Tips for AD (Not Required)</h2>
+<h2>Additional Guides to other features in AD to tinker with (Not Required)</h2>
 
 <p align="center"> To Create a new Organizational Unit (OU), go to Active Directory Users and Computers and then right click the domain (in this case THM) and select new, then Organizational Unit. <br />
 <img src="https://i.imgur.com/pgk0PH3.png" height="80%" width="80%" alt="Creating an Organizational Unit."/>
@@ -131,19 +131,33 @@ Create a new VM machine by clicking on "New" in VirtualBox, to avoid confusion n
 <img src="https://i.imgur.com/ej8Dc0J.png" height="80%" width="80%" alt="Showing where the objects have ended up."/>
 
 
-<p align="center">Examples of Group policy editor, and examples of whats in a policy.<br />
+<p align="center">Examples of Group policy editor, and examples of whats in a policy. Policies created are under the Group Policy Objects, when linked (when they are actively used) will show them under the OUs or Domain.<br />
 <img src="https://i.imgur.com/w6nsOMQ.png" height="80%" width="80%" alt="Searching for the Group Policy Editor."/>
 <img src="https://i.imgur.com/K77VAHC.png" height="80%" width="80%" alt="Showing the Group Policy Editor."/>
 <img src="https://i.imgur.com/if2tmWk.png" height="80%" width="80%" alt="Example of a Default Domain Policy."/>
 <img src="https://i.imgur.com/EJxRSso.png" height="80%" width="80%" alt="Showing the Computer configuration tab to show the policies."/>
 <img src="https://i.imgur.com/FOhPMkY.png" height="80%" width="80%" alt="Showing what is under those policies."/>
 
-<p align="center">Editing a poilicy example. In this example, we will be changing the minimum password length for all, and prohibiting access to control panel for all OUs except for IT.<br />
-<img src="" height="80%" width="80%" alt=""/>
-<img src="" height="80%" width="80%" alt=""/>
-<img src="" height="80%" width="80%" alt=""/>
-<img src="" height="80%" width="80%" alt=""/>
-<img src="" height="80%" width="80%" alt=""/>
-<img src="" height="80%" width="80%" alt=""/>
+<p align="center">Showing how to edit a poilicy example. In this example, we will be showing how one would go to edit the Minimum password length policy. <br />
+<img src="https://i.imgur.com/sxzmwpP.png" height="80%" width="80%" alt="Right clicking a policy and selecting edit."/>
+<img src="https://i.imgur.com/jc6GkSO.png" height="80%" width="80%" alt="Finding the Minimum password length policy."/>
+<img src="https://i.imgur.com/Uy3SQoM.png" height="80%" width="80%" alt="Right clicking properties of selected policy to edit it."/>
+<img src="https://i.imgur.com/lcWNUdw.png" height="80%" width="80%" alt="Showing the popup that appears when clicking properties on a policy."/>
+<img src="https://i.imgur.com/uJxdIfc.png" height="80%" width="80%" alt="Showing that policies may have an explaination tab that details what the policy does."/>
 
-<img src="" height="80%" width="80%" alt=""/>
+
+<p align="center">After creating and editing a Group Policy Object, the next step would be to link the policy to OU(s) needed, in this example we will be linking the Prohibit Accesss to Control Panel and PC settings policy to 3 OUs inside the Domain, as well as the Auto Lock Screen policy to the whole domain instead of specific OUs.<br />
+<img src="https://i.imgur.com/yP8DViH.png" height="80%" width="80%" alt="Editing another GPO"/>
+<img src="https://i.imgur.com/KFxMt6g.png" height="80%" width="80%" alt="Selecting a Policy setting and editing it."/>
+<img src="https://i.imgur.com/P9vJ7h5.png" height="80%" width="80%" alt="Showing the Prohibit access to control panel and PC settings popup."/>
+<img src="https://i.imgur.com/gWm6g7S.png" height="80%" width="80%" alt="Right clicking the OU and linking the group policy to it."/>
+<img src="https://i.imgur.com/8F9aQtI.png" height="80%" width="80%" alt="Selecting the correct Group Policy Object to link it to."/>
+<img src="https://i.imgur.com/c7SUr7W.png" height="80%" width="80%" alt="Repeating the process so that Managment, Marketing, Research and Development, and Sales have the GPO"/>
+<img src="https://i.imgur.com/BsfJwlT.png" height="80%" width="80%" alt=" Editing the Auto Lock Screen GPO."/>
+<img src="https://i.imgur.com/ORj3BVW.png" height="80%" width="80%" alt="Editing the specific policy in the GPO"/>
+<img src="https://i.imgur.com/uEC0Jvb.png" height="80%" width="80%" alt="Editing the Poliicy time limit for auto lock."/>
+<img src="https://i.imgur.com/dCBh3aX.png" height="80%" width="80%" alt="popup that appears verifying that you want to place the GPO to the whole domain."/>
+<img src="https://i.imgur.com/0t0iKqV.png" height="80%" width="80%" alt="Showing that the Domain has the Auto Lock Screen GPO."/>
+<img src="https://i.imgur.com/NvrzGSJ.png" height="80%" width="80%" alt="using RDP to test out the GPO"/>
+<img src="https://i.imgur.com/hHWEA6Q.png" height="80%" width="80%" alt="Trying to open the Control Panel application"/>
+<img src="https://i.imgur.com/vZGQrgL.png" height="80%" width="80%" alt="Showing the error that occurs, prohibitng the use of Control Panel."/>
